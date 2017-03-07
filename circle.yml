@@ -1,7 +1,7 @@
 machine:
   environment:
-    NAME: Student
-    FILE_ID: 0B9BrFrtW87-UeHM1b08wVDJxc2M
+    NAME: WebVR
+    FILE_ID: 0B9BrFrtW87-UUUlLSkQzalNWZEk
   node:
     version: 5.6.0
 deployment:
@@ -17,3 +17,4 @@ deployment:
       - sed -e "s#DRIVE_ACCESS_TOKEN#$(echo $DRIVE_ACCESS_TOKEN)#g" -e "s#DRIVE_REFRESH_TOKEN#$(echo $DRIVE_REFRESH_TOKEN)#g" ./token_v2.txt > ~/.gdrive/token_v2.json
       - sudo chmod +x gdrive
       - ./gdrive sync upload ./$NAME $FILE_ID
+      - ./node_modules/.bin/gh-pages -d ./_book
