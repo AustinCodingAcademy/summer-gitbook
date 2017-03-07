@@ -49,16 +49,58 @@ developers get more done with less effort. One such framework is
       <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
     </head>
     <body>
-      <a-scene>
-        <a-sphere position="0 1.25 -5" color="red"></a-sphere>
-        <a-box position="-1 0.5 -3" rotation="0 45 0" width="1" height="1" depth="1" color="blue"></a-box>
-        <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="yellow"></a-cylinder>
-        <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="green"></a-plane>
-        <a-sky color="gray"></a-sky>
-      </a-scene>
+
     </body>
   </html>
   ```
+
+1. Open the file up in your browser. You should see a whole lot of nothing.
+
+### 2. Let's build a `scene`
+
+1. In your template, add as `<a-scene>` tag
+  ```html
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>My first WebVR Project!</title>
+      <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    </head>
+    <body>
+      <scene>
+
+      </scene>
+    </body>
+  </html>
+  ```
+  Refresh your browser and now you should see a little pair of goggles. Good!
+
+1. Baller, shot caller! Let's add a `<a-sphere>`
+  ```html
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>My first WebVR Project!</title>
+      <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    </head>
+    <body>
+      <a-scene>
+        <a-sphere color="red"></a-sphere>
+      </scene>
+    </body>
+  </html>
+  ```
+  Now refresh the the browser. AAnnndd we see..nothing! WTF? Try backing up with
+  the arrow keys. The ball should come into view. We were standing on it!
+
+### 3. Positioning
+<img src="https://docs.google.com/drawings/d/1GlFDWXrL-MGIjP0w83-VKmJ8C_y0kcI53lONwQgXNvY/pub?w=536&amp;h=767">
+
+The reason the ball started out under us was because we all start out at `position="0 0 0"`,
+even shapes.
+
 
 
 {% include "./footer.md" %}
