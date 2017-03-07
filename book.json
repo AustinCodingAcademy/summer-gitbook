@@ -10,11 +10,11 @@
         "ga": {
             "token": "UA-68821515-2",
             "configuration": {
-                "name": "Student"
+                "name": "WebVR"
             }
         },
         "edit-link": {
-            "base": "https://github.com/AustinCodingAcademy/student-gitbook/edit/master/",
+            "base": "https://github.com/AustinCodingAcademy/webvr-gitbook/edit/master/",
             "label": "Edit This Page"
         },
         "disqus": {

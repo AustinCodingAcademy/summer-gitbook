@@ -1,1 +1,1 @@
-![aca-logo](./images/logos/ACA_standard_horizontal.png)
+<img src="./images/logos/ACA_standard_horizontal.png" alt="ACA logo" style="max-width: 500px"/>
