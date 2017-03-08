@@ -150,7 +150,7 @@ where you are only limited by your imagination. While building in SketchUp is be
 the scope of the workshop, we can play around with models others have created!
 [3D Warehouse](https://3dwarehouse.sketchup.com/) is a repository of models built
 by designers, architects, and enthusiasts. From here we can download a COLLADA
-file and import it into our scene. Let's use this COLLADA file as an example.
+file and import it into our scene. Let's use this COLLADA file as an demo.
 
 ### Show me the `grid`
 Let's start by:
@@ -166,12 +166,12 @@ Let's start by:
     <title>My first WebVR Project!</title>
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.2.7/dist/aframe-extras.min.js"></script>
-    <script src="https://webvr.austincodingacademy.com/example/automove-controls.js" charset="utf-8"></script>
+    <script src="https://webvr.austincodingacademy.com/demo/automove-controls.js" charset="utf-8"></script>
   </head>
   <body>
     <a-scene>
       <a-assets>
-        <img id="smile" src="https://webvr.austincodingacademy.com/example/example/smile.jpg">
+        <img id="smile" src="https://webvr.austincodingacademy.com/demo/demo/smile.jpg">
       </a-assets>
       <!-- <a-sphere material="src: #smile" position="0 2 -3" color="yellow" rotation="0 -90 0"></a-sphere> -->
       <a-grid static-body geometry="width:100; height: 100;"></a-grid>
@@ -186,7 +186,7 @@ We should be able to walk around on a grid. Now let's pull in our 3D model
 
 1. In your `a-assets` section add
 ```html
-<a-asset-item id="doors" src="https://webvr.austincodingacademy.com/example/example/model.dae"></a-asset-item>
+<a-asset-item id="doors" src="https://webvr.austincodingacademy.com/demo/demo/model.dae"></a-asset-item>
 ```
 this will load our model.
 
@@ -225,14 +225,14 @@ Here is our final code
   <title></title>
   <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
   <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.2.7/dist/aframe-extras.min.js"></script>
-  <script src="https://webvr.austincodingacademy.com/example//automove-controls.js" charset="utf-8"></script>
+  <script src="https://webvr.austincodingacademy.com/demo/automove-controls.js" charset="utf-8"></script>
 </head>
 
 <body>
   <a-scene>
     <a-assets>
-      <a-asset-item id="doors" src="https://webvr.austincodingacademy.com/example/model.dae"></a-asset-item>
-      <img id="smile" src="https://webvr.austincodingacademy.com/example/example/smile.jpg">
+      <a-asset-item id="doors" src="https://webvr.austincodingacademy.com/demo/model.dae"></a-asset-item>
+      <img id="smile" src="https://webvr.austincodingacademy.com/demo/demo/smile.jpg">
     </a-assets>
     <!-- <a-sphere material="src: #smile" position="0 2 -3" color="yellow" rotation="0 -90 0"></a-sphere> -->
     <a-entity id="player"
@@ -247,9 +247,10 @@ Here is our final code
     <a-grid id="ground" static-body geometry="width:100; height: 100;"></a-grid>
   </a-scene>
 </body>
+</html>
 ```
 
-You can view the hosted solution at https://vr.austincodingacademy.com/example.
+You can view the hosted solution at https://webvr.austincodingacademy.com/demo.
 Try it out on your phone in your Cardboard!
 
 ## Bonus lesson - Host your own work!
