@@ -68,9 +68,9 @@ developers get more done with less effort. One such framework is
       <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
     </head>
     <body>
-      <scene>
+      <a-scene>
 
-      </scene>
+      </a-scene>
     </body>
   </html>
   ```
@@ -87,7 +87,7 @@ developers get more done with less effort. One such framework is
     </head>
     <body>
       <a-scene>
-        <a-sphere color="red"></a-sphere>
+        <a-sphere color="yellow"></a-sphere>
       </scene>
     </body>
   </html>
@@ -95,12 +95,176 @@ developers get more done with less effort. One such framework is
   Now refresh the the browser. AAnnndd we see..nothing! WTF? Try backing up with
   the arrow keys. The ball should come into view. We were standing on it!
 
-### 3. Positioning
+### 3. Position Yo Self
 <img src="https://docs.google.com/drawings/d/1GlFDWXrL-MGIjP0w83-VKmJ8C_y0kcI53lONwQgXNvY/pub?w=536&amp;h=767">
 
 The reason the ball started out under us was because we all start out at `position="0 0 0"`,
-even shapes.
+even shapes. When we backed up, we changed our `z` increased our `z` position which
+put our sphere out in front. Now instead of us having to move back (your audience might
+not know to do that) let's push the sphere forward by assigning it a negative `z` value, and maybe a little up with increasing the `y`
 
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My first WebVR Project!</title>
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-sphere position="0 2 -3" color="yellow"></a-sphere>
+    </scene>
+  </body>
+</html>
+```
 
+### 4. Adding Some Texture
+If we were just building a VR Ball Pit, solid color spheres would be perfect. But
+you probably want to add some texture, or at the least an image, to add some flair.
+
+First, we add an `<a-assets></a-assets>` element to our `scene`. Then inside,
+we can link to an image and give it an `id`
+```html
+<a-assets>
+  <img id="smile" src="smile.jpg">
+</a-assets>
+```
+
+then on our `a-sphere` we can add a `material` attribute linking to that `id`
+
+```html
+<a-sphere material="src: #smile" position="0 2 -3" color="yellow"></a-sphere>
+```
+
+Boom! We have a smiley face giving us the cold shoulder. Let's rotate it towards us.
+
+```html
+<a-sphere material="src: #smile" position="0 2 -3" color="yellow" rotation="0 45 0"></a-sphere>
+```
+
+## Importing 3D Models
+Building models from scratch is fun, but we can get some real work down importing
+3D models from other software. [SketchUp](https://www.sketchup.com/) is one such software
+where you are only limited by your imagination. While building in SketchUp is beyond
+the scope of the workshop, we can play around with models others have created!
+[3D Warehouse](https://3dwarehouse.sketchup.com/) is a repository of models built
+by designers, architects, and enthusiasts. From here we can download a COLLADA
+file and import it into our scene. Let's use this COLLADA file as an example.
+
+### Show me the `grid`
+Let's start by:
+1. adding two shiny new libraries
+1. hiding the smiley
+1. sphere for now, and giving ourselves a nice little `static` `grid` to stand on
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My first WebVR Project!</title>
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.2.7/dist/aframe-extras.min.js"></script>
+    <script src="https://webvr.austincodingacademy.com/example/automove-controls.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="smile" src="https://webvr.austincodingacademy.com/example/example/smile.jpg">
+      </a-assets>
+      <!-- <a-sphere material="src: #smile" position="0 2 -3" color="yellow" rotation="0 -90 0"></a-sphere> -->
+      <a-grid static-body geometry="width:100; height: 100;"></a-grid>
+    </scene>
+  </body>
+</html>
+```
+
+### I'm a `collada-model`
+We should be able to walk around on a grid. Now let's pull in our 3D model
+(downloaded from 3D Warehouse).
+
+1. In your `a-assets` section add
+```html
+<a-asset-item id="doors" src="https://webvr.austincodingacademy.com/example/example/model.dae"></a-asset-item>
+```
+this will load our model.
+
+1. Now we can add the model to the `a-scene`
+  ```html
+  <a-entity position="-3 -1 5.5">
+    <a-entity collada-model="#doors" position="0 1.1 0"></a-entity>
+  </a-entity>
+  ```
+
+  Bam! Through a few monsters and blood stains and we have ourselves a DOOM clone.
+
+### Don't hate the player
+But when we put the headsets on ourselves, (and on our friends, family, SXSW acquaintances, pets, etc)
+we are going to want to move around, not just stand there goofing off. And did you know
+there's a murderer in here! Get out! We've already included the script that allows
+a `#player` to walk around, now we just need to put him in the `a-scene`
+
+```html
+<a-entity id="player"
+  camera
+  universal-controls="movementControls: automove, gamepad, keyboard"
+  kinematic-body
+  position="0 8 0"
+></a-entity>
+```
+
+## Wrap up
+Here is our final code
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.2.7/dist/aframe-extras.min.js"></script>
+  <script src="https://webvr.austincodingacademy.com/example//automove-controls.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <a-scene>
+    <a-assets>
+      <a-asset-item id="doors" src="https://webvr.austincodingacademy.com/example/model.dae"></a-asset-item>
+      <img id="smile" src="https://webvr.austincodingacademy.com/example/example/smile.jpg">
+    </a-assets>
+    <!-- <a-sphere material="src: #smile" position="0 2 -3" color="yellow" rotation="0 -90 0"></a-sphere> -->
+    <a-entity id="player"
+      camera
+      universal-controls="movementControls: automove, gamepad, keyboard"
+      kinematic-body
+      position="0 8 0"
+    ></a-entity>
+    <a-entity position="-3 -1 5.5">
+      <a-entity collada-model="#doors" position="0 1.1 0"></a-entity>
+    </a-entity>
+    <a-grid id="ground" static-body geometry="width:100; height: 100;"></a-grid>
+  </a-scene>
+</body>
+```
+
+You can view the hosted solution at https://vr.austincodingacademy.com/example.
+Try it out on your phone in your Cardboard!
+
+## Bonus lesson - Host your own work!
+
+1. Make an account on https://github.com
+1. Verify your email
+1. Create a new repository using your username called `<your username here>.github.io`
+1. click "include a README", and put something like
+   ```markdown
+   # This is my first WebVR project!
+   Go to <your username here>.github.io to see it on your mobile device!
+   ```
+   and commit the file.
+1. Click "Create new file", name it `index.html`, copy/paste your code, and commit.
+1. Visit `<your username here>.github.io` on your phone! You're a WebVR developer now!
+1. Tell literally everybody at least twice.
 
 {% include "./footer.md" %}
