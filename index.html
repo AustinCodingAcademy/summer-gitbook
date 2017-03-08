@@ -335,7 +335,7 @@ where you are only limited by your imagination. While building in SketchUp is be
 the scope of the workshop, we can play around with models others have created!
 <a href="https://3dwarehouse.sketchup.com/" target="_blank">3D Warehouse</a> is a repository of models built
 by designers, architects, and enthusiasts. From here we can download a COLLADA
-file and import it into our scene. Let&apos;s use this COLLADA file as an example.</p>
+file and import it into our scene. Let&apos;s use this COLLADA file as an demo.</p>
 <h3 id="show-me-the-grid">Show me the <code>grid</code></h3>
 <p>Let&apos;s start by:</p>
 <ol>
@@ -350,12 +350,12 @@ file and import it into our scene. Let&apos;s use this COLLADA file as an exampl
     <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>My first WebVR Project!<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://aframe.io/releases/0.5.0/aframe.min.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.2.7/dist/aframe-extras.min.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://webvr.austincodingacademy.com/example/automove-controls.js&quot;</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://webvr.austincodingacademy.com/demo/automove-controls.js&quot;</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">a-assets</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;smile&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://webvr.austincodingacademy.com/example/example/smile.jpg&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;smile&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://webvr.austincodingacademy.com/demo/demo/smile.jpg&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">a-assets</span>&gt;</span>
       <span class="hljs-comment">&lt;!-- &lt;a-sphere material=&quot;src: #smile&quot; position=&quot;0 2 -3&quot; color=&quot;yellow&quot; rotation=&quot;0 -90 0&quot;&gt;&lt;/a-sphere&gt; --&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">a-grid</span> <span class="hljs-attr">static-body</span> <span class="hljs-attr">geometry</span>=<span class="hljs-string">&quot;width:100; height: 100;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-grid</span>&gt;</span>
@@ -368,7 +368,7 @@ file and import it into our scene. Let&apos;s use this COLLADA file as an exampl
 (downloaded from 3D Warehouse).</p>
 <ol>
 <li><p>In your <code>a-assets</code> section add</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-asset-item</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;doors&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://webvr.austincodingacademy.com/example/example/model.dae&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-asset-item</span>&gt;</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-asset-item</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;doors&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://webvr.austincodingacademy.com/demo/demo/model.dae&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-asset-item</span>&gt;</span>
 </code></pre>
 <p>this will load our model.</p>
 </li>
@@ -402,14 +402,14 @@ a <code>#player</code> to walk around, now we just need to put him in the <code>
   <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://aframe.io/releases/0.5.0/aframe.min.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.2.7/dist/aframe-extras.min.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://webvr.austincodingacademy.com/example//automove-controls.js&quot;</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://webvr.austincodingacademy.com/demo/automove-controls.js&quot;</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">a-assets</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">a-asset-item</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;doors&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://webvr.austincodingacademy.com/example/model.dae&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-asset-item</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;smile&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://webvr.austincodingacademy.com/example/example/smile.jpg&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a-asset-item</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;doors&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://webvr.austincodingacademy.com/demo/model.dae&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-asset-item</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;smile&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://webvr.austincodingacademy.com/demo/demo/smile.jpg&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">a-assets</span>&gt;</span>
     <span class="hljs-comment">&lt;!-- &lt;a-sphere material=&quot;src: #smile&quot; position=&quot;0 2 -3&quot; color=&quot;yellow&quot; rotation=&quot;0 -90 0&quot;&gt;&lt;/a-sphere&gt; --&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">a-entity</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;player&quot;</span>
@@ -424,8 +424,9 @@ a <code>#player</code> to walk around, now we just need to put him in the <code>
     <span class="hljs-tag">&lt;<span class="hljs-name">a-grid</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;ground&quot;</span> <span class="hljs-attr">static-body</span> <span class="hljs-attr">geometry</span>=<span class="hljs-string">&quot;width:100; height: 100;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-grid</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">a-scene</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<p>You can view the hosted solution at <a href="https://vr.austincodingacademy.com/example" target="_blank">https://vr.austincodingacademy.com/example</a>.
+<p>You can view the hosted solution at <a href="https://webvr.austincodingacademy.com/demo" target="_blank">https://webvr.austincodingacademy.com/demo</a>.
 Try it out on your phone in your Cardboard!</p>
 <h2 id="bonus-lesson---host-your-own-work">Bonus lesson - Host your own work!</h2>
 <ol>
@@ -476,7 +477,7 @@ and commit the file.</li>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"WebVR 101","level":"1.1","depth":1,"next":{"title":"Austin Coding Academy","level":"1.2","depth":1,"url":"https://austincodingacademy.com","ref":"https://austincodingacademy.com","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["edit-link","ga","collapsible-chapters","replace-with-index-html","disqus"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"austincodingacademy"},"search":{},"collapsible-chapters":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"replace-with-index-html":{},"ga":{"configuration":{"name":"WebVR"},"token":"UA-68821515-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/AustinCodingAcademy/webvr-gitbook/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-03-08T22:52:06.105Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-08T22:53:27.540Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"WebVR 101","level":"1.1","depth":1,"next":{"title":"Austin Coding Academy","level":"1.2","depth":1,"url":"https://austincodingacademy.com","ref":"https://austincodingacademy.com","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["edit-link","ga","collapsible-chapters","replace-with-index-html","disqus"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"austincodingacademy"},"search":{},"collapsible-chapters":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"replace-with-index-html":{},"ga":{"configuration":{"name":"WebVR"},"token":"UA-68821515-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/AustinCodingAcademy/webvr-gitbook/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-03-08T23:07:46.394Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-08T23:09:12.102Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
