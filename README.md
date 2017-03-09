@@ -99,9 +99,9 @@ developers get more done with less effort. One such framework is
 <img src="https://docs.google.com/drawings/d/1GlFDWXrL-MGIjP0w83-VKmJ8C_y0kcI53lONwQgXNvY/pub?w=536&amp;h=767">
 
 The reason the ball started out under us was because we all start out at `position="0 0 0"`,
-even shapes. When we backed up, we changed our `z` increased our `z` position which
+even shapes. When we backed up, we increased our `z` position which
 put our sphere out in front. Now instead of us having to move back (your audience might
-not know to do that) let's push the sphere forward by assigning it a negative `z` value, and maybe a little up with increasing the `y`
+not know to do that) let's push the sphere forward by assigning it a negative `z` value, and maybe a little up by increasing the `y`
 
 ```html
 <!DOCTYPE html>
