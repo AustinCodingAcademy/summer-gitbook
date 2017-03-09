@@ -253,13 +253,19 @@ Here is our final code
 </html>
 ```
 
-You can view the hosted solution at https://webvr.austincodingacademy.com/demo.
-Try it out on your phone in your Cardboard!
-
 ## Challenge - Let's play Find that Smile!
 Let's uncomment our smiley ball, shrink it up a bit, and use `position` to hide
 it somewhere in the house. If you're really clever, you can figure out the bounds
 of the building and try to randomize the `position` on load!
+
+You can view the hosted solution at [here](https://webvr.austincodingacademy.com/demo)
+Try it out on your phone in your Cardboard!
+
+Here is the [source](https://github.com/AustinCodingAcademy/webvr-gitbook/tree/master/demo)
+
+Want another? How about the [first level of DOOM](https://webvr.austincodingacademy.com/demo)!
+
+[source](https://github.com/AustinCodingAcademy/webvr-gitbook/tree/master/doom)
 
 ## Bonus - Host your own work!
 
