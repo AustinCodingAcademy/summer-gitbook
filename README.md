@@ -96,7 +96,7 @@ developers get more done with less effort. One such framework is
   the arrow keys. The ball should come into view. We were standing on it!
 
 ### 3. Position Yo Self
-<img src="https://docs.google.com/drawings/d/1GlFDWXrL-MGIjP0w83-VKmJ8C_y0kcI53lONwQgXNvY/pub?w=536&amp;h=767">
+<img src="https://docs.google.com/drawings/d/1GlFDWXrL-MGIjP0w83-VKmJ8C_y0kcI53lONwQgXNvY/pub?w=250">
 
 The reason the ball started out under us was because we all start out at `position="0 0 0"`,
 even shapes. When we backed up, we increased our `z` position which
@@ -139,8 +139,11 @@ then on our `a-sphere` we can add a `material` attribute linking to that `id`
 
 Boom! We have a smiley face giving us the cold shoulder. Let's rotate it towards us.
 
+### 5. Rotation
+<img src="https://docs.google.com/drawings/d/11wnQqHgn5GFL2SXHpR4LkUIPsZo8KJPsSYUoMarDvc4/pub?w=250">
+
 ```html
-<a-sphere material="src: #smile" position="0 2 -3" color="yellow" rotation="0 45 0"></a-sphere>
+<a-sphere material="src: #smile" position="0 2 -3" color="yellow" rotation="0 -90 0"></a-sphere>
 ```
 
 ## Importing 3D Models
@@ -253,7 +256,12 @@ Here is our final code
 You can view the hosted solution at https://webvr.austincodingacademy.com/demo.
 Try it out on your phone in your Cardboard!
 
-## Bonus lesson - Host your own work!
+## Challenge - Let's play Find that Smile!
+Let's uncomment our smiley ball, shrink it up a bit, and use `position` to hide
+it somewhere in the house. If you're really clever, you can figure out the bounds
+of the building and try to randomize the `position` on load!
+
+## Bonus - Host your own work!
 
 1. Make an account on https://github.com
 1. Verify your email
