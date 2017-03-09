@@ -294,7 +294,7 @@ the arrow keys. The ball should come into view. We were standing on it!</p>
 </li>
 </ol>
 <h3 id="3-position-yo-self">3. Position Yo Self</h3>
-<p><img src="https://docs.google.com/drawings/d/1GlFDWXrL-MGIjP0w83-VKmJ8C_y0kcI53lONwQgXNvY/pub?w=536&amp;h=767"></p>
+<p><img src="https://docs.google.com/drawings/d/1GlFDWXrL-MGIjP0w83-VKmJ8C_y0kcI53lONwQgXNvY/pub?w=250"></p>
 <p>The reason the ball started out under us was because we all start out at <code>position=&quot;0 0 0&quot;</code>,
 even shapes. When we backed up, we increased our <code>z</code> position which
 put our sphere out in front. Now instead of us having to move back (your audience might
@@ -326,7 +326,9 @@ we can link to an image and give it an <code>id</code></p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-sphere</span> <span class="hljs-attr">material</span>=<span class="hljs-string">&quot;src: #smile&quot;</span> <span class="hljs-attr">position</span>=<span class="hljs-string">&quot;0 2 -3&quot;</span> <span class="hljs-attr">color</span>=<span class="hljs-string">&quot;yellow&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-sphere</span>&gt;</span>
 </code></pre>
 <p>Boom! We have a smiley face giving us the cold shoulder. Let&apos;s rotate it towards us.</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-sphere</span> <span class="hljs-attr">material</span>=<span class="hljs-string">&quot;src: #smile&quot;</span> <span class="hljs-attr">position</span>=<span class="hljs-string">&quot;0 2 -3&quot;</span> <span class="hljs-attr">color</span>=<span class="hljs-string">&quot;yellow&quot;</span> <span class="hljs-attr">rotation</span>=<span class="hljs-string">&quot;0 45 0&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-sphere</span>&gt;</span>
+<h3 id="5-rotation">5. Rotation</h3>
+<p><img src="https://docs.google.com/drawings/d/11wnQqHgn5GFL2SXHpR4LkUIPsZo8KJPsSYUoMarDvc4/pub?w=250"></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-sphere</span> <span class="hljs-attr">material</span>=<span class="hljs-string">&quot;src: #smile&quot;</span> <span class="hljs-attr">position</span>=<span class="hljs-string">&quot;0 2 -3&quot;</span> <span class="hljs-attr">color</span>=<span class="hljs-string">&quot;yellow&quot;</span> <span class="hljs-attr">rotation</span>=<span class="hljs-string">&quot;0 -90 0&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-sphere</span>&gt;</span>
 </code></pre>
 <h2 id="importing-3d-models">Importing 3D Models</h2>
 <p>Building models from scratch is fun, but we can get some real work down importing
@@ -428,7 +430,11 @@ a <code>#player</code> to walk around, now we just need to put him in the <code>
 </code></pre>
 <p>You can view the hosted solution at <a href="https://webvr.austincodingacademy.com/demo" target="_blank">https://webvr.austincodingacademy.com/demo</a>.
 Try it out on your phone in your Cardboard!</p>
-<h2 id="bonus-lesson---host-your-own-work">Bonus lesson - Host your own work!</h2>
+<h2 id="challenge---lets-play-find-that-smile">Challenge - Let&apos;s play Find that Smile!</h2>
+<p>Let&apos;s uncomment our smiley ball, shrink it up a bit, and use <code>position</code> to hide
+it somewhere in the house. If you&apos;re really clever, you can figure out the bounds
+of the building and try to randomize the <code>position</code> on load!</p>
+<h2 id="bonus---host-your-own-work">Bonus - Host your own work!</h2>
 <ol>
 <li>Make an account on <a href="https://github.com" target="_blank">https://github.com</a></li>
 <li>Verify your email</li>
@@ -477,7 +483,7 @@ and commit the file.</li>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"WebVR 101","level":"1.1","depth":1,"next":{"title":"Austin Coding Academy","level":"1.2","depth":1,"url":"https://austincodingacademy.com","ref":"https://austincodingacademy.com","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["edit-link","ga","collapsible-chapters","replace-with-index-html","disqus"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"austincodingacademy"},"search":{},"collapsible-chapters":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"replace-with-index-html":{},"ga":{"configuration":{"name":"WebVR"},"token":"UA-68821515-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/AustinCodingAcademy/webvr-gitbook/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-03-09T20:41:25.029Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-09T20:42:45.562Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"WebVR 101","level":"1.1","depth":1,"next":{"title":"Austin Coding Academy","level":"1.2","depth":1,"url":"https://austincodingacademy.com","ref":"https://austincodingacademy.com","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["edit-link","ga","collapsible-chapters","replace-with-index-html","disqus"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"austincodingacademy"},"search":{},"collapsible-chapters":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"replace-with-index-html":{},"ga":{"configuration":{"name":"WebVR"},"token":"UA-68821515-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/AustinCodingAcademy/webvr-gitbook/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-03-09T21:08:26.759Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-09T21:09:49.238Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
