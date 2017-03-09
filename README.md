@@ -171,7 +171,7 @@ Let's start by:
   <body>
     <a-scene>
       <a-assets>
-        <img id="smile" src="https://webvr.austincodingacademy.com/demo/demo/smile.jpg">
+        <img id="smile" src="https://webvr.austincodingacademy.com/demo/smile.jpg">
       </a-assets>
       <!-- <a-sphere material="src: #smile" position="0 2 -3" color="yellow" rotation="0 -90 0"></a-sphere> -->
       <a-grid static-body geometry="width:100; height: 100;"></a-grid>
@@ -186,7 +186,7 @@ We should be able to walk around on a grid. Now let's pull in our 3D model
 
 1. In your `a-assets` section add
 ```html
-<a-asset-item id="doors" src="https://webvr.austincodingacademy.com/demo/demo/model.dae"></a-asset-item>
+<a-asset-item id="doors" src="https://webvr.austincodingacademy.com/demo/model/model.dae"></a-asset-item>
 ```
 this will load our model.
 
@@ -231,8 +231,8 @@ Here is our final code
 <body>
   <a-scene>
     <a-assets>
-      <a-asset-item id="doors" src="https://webvr.austincodingacademy.com/demo/model.dae"></a-asset-item>
-      <img id="smile" src="https://webvr.austincodingacademy.com/demo/demo/smile.jpg">
+      <a-asset-item id="doors" src="https://webvr.austincodingacademy.com/demo/model/model.dae"></a-asset-item>
+      <img id="smile" src="https://webvr.austincodingacademy.com/demo/smile.jpg">
     </a-assets>
     <!-- <a-sphere material="src: #smile" position="0 2 -3" color="yellow" rotation="0 -90 0"></a-sphere> -->
     <a-entity id="player"
