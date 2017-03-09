@@ -4,6 +4,10 @@ machine:
     FILE_ID: 0B9BrFrtW87-UUUlLSkQzalNWZEk
   node:
     version: 5.6.0
+general:
+  branches:
+    only:
+      - master
 deployment:
   master:
     branch: master
