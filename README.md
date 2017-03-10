@@ -19,11 +19,11 @@ The platform for WebVR is the browser, such as Safari, Chrome, Firefox, etc. The
 browser is only capable of reading three languages: HTML, CSS, and JavaScript.
 Lately, most of the popular browsers have implemented a new JavaScript feature called
 [WebGL](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API), which allows
-your browser to render 2D and 3D scenes by tapping into your device hardware (think CPU,
+your browser to render 2D and 3D scenes by tapping into your device's hardware (think CPU,
 RAM, etc).
 
-### Three.js (2010)
-WebGL was a huge feature for JavaScript, and [Three.js](https://threejs.org/),
+### three.js (2010)
+WebGL was a huge feature for JavaScript, and [three.js](https://threejs.org/),
 among [others](https://en.wikipedia.org/wiki/Three.js#Overview), came along to
 help developers build with the WebGL API more easily.
 
@@ -98,7 +98,7 @@ developers get more done with less effort. One such framework is
   ![sphere](./images/sphere.png)
 
 ### 3. Position Yo Self
-<img src="https://docs.google.com/drawings/d/1GlFDWXrL-MGIjP0w83-VKmJ8C_y0kcI53lONwQgXNvY/pub?w=250">
+<img src="https://docs.google.com/drawings/d/1GlFDWXrL-MGIjP0w83-VKmJ8C_y0kcI53lONwQgXNvY/pub?w=400">
 
 The reason the ball started out under us was because we all start out at `position="0 0 0"`,
 even shapes. When we backed up, we increased our `z` position which
@@ -115,7 +115,10 @@ not know to do that) let's push the sphere forward by assigning it a negative `z
   </head>
   <body>
     <a-scene>
-      <a-sphere position="0 2 -3" color="yellow"></a-sphere>
+      <a-sphere
+        position="0 2 -3"
+        color="yellow"
+      ></a-sphere>
     </scene>
   </body>
 </html>
@@ -136,16 +139,25 @@ we can link to an image and give it an `id`
 then on our `a-sphere` we can add a `material` attribute linking to that `id`
 
 ```html
-<a-sphere material="src: #smile" position="0 2 -3" color="yellow"></a-sphere>
+<a-sphere
+  material="src: #smile"
+  position="0 2 -3"
+  color="yellow"
+></a-sphere>
 ```
-
+![side](./images/side.png)
 Boom! We have a creepy smiley face giving us the cold shoulder. Let's rotate it towards us.
 
 ### 5. Rotation
 <img src="https://docs.google.com/drawings/d/11wnQqHgn5GFL2SXHpR4LkUIPsZo8KJPsSYUoMarDvc4/pub?w=250">
 
 ```html
-<a-sphere material="src: #smile" position="0 2 -3" color="yellow" rotation="0 -90 0"></a-sphere>
+<a-sphere
+  material="src: #smile"
+  position="0 2 -3"
+  color="yellow"
+  rotation="0 -90 0"
+></a-sphere>
 ```
 ![smily](./images/smily.png)
 
@@ -179,7 +191,12 @@ Let's start by:
       <a-assets>
         <img id="smile" src="https://webvr.austincodingacademy.com/demo/smile.jpg">
       </a-assets>
-      <!-- <a-sphere material="src: #smile" position="0 2 -3" color="yellow" rotation="0 -90 0"></a-sphere> -->
+      <!-- <a-sphere
+        material="src: #smile"
+        position="0 2 -3"
+        color="yellow"
+        rotation="0 -90 0"
+      ></a-sphere> -->
       <a-grid static-body geometry="width:100; height: 100;"></a-grid>
     </scene>
   </body>
@@ -243,7 +260,12 @@ Here is our final code
       <a-asset-item id="doors" src="https://webvr.austincodingacademy.com/demo/model.dae"></a-asset-item>
       <img id="smile" src="https://webvr.austincodingacademy.com/demo/smile.jpg">
     </a-assets>
-    <!-- <a-sphere material="src: #smile" position="0 2 -3" color="yellow" rotation="0 -90 0"></a-sphere> -->
+    <!-- <a-sphere
+      material="src: #smile"
+      position="0 2 -3"
+      color="yellow"
+      rotation="0 -90 0"
+    ></a-sphere> -->
     <a-entity id="player"
       camera
       universal-controls="movementControls: automove, gamepad, keyboard"
