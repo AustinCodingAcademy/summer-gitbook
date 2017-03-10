@@ -88,7 +88,9 @@ developers get more done with less effort. One such framework is
     </head>
     <body>
       <a-scene>
-        <a-sphere color="yellow"></a-sphere>
+        <a-sphere
+          color="yellow"
+        ></a-sphere>
       </scene>
     </body>
   </html>
@@ -125,8 +127,9 @@ not know to do that) let's push the sphere forward by assigning it a negative `z
 ```
 
 ### 4. Adding Some Texture
-If we were just building a VR Ball Pit, solid color spheres would be perfect. But
-you probably want to add some texture, or at the least an image, to add some flair.
+If we were just building a VR [Ball Pit](https://www.google.com/search?tbm=isch&q=ball%20pit&tbs=imgo:1),
+solid color spheres would be perfect. But you'll probably want to add some texture
+at some point, or at the least an image, to add some flair.
 
 First, we add an `<a-assets></a-assets>` element to our `scene`. Then inside,
 we can link to an image and give it an `id`
@@ -146,10 +149,11 @@ then on our `a-sphere` we can add a `material` attribute linking to that `id`
 ></a-sphere>
 ```
 ![side](./images/side.png)
+
 Boom! We have a creepy smiley face giving us the cold shoulder. Let's rotate it towards us.
 
 ### 5. Rotation
-<img src="https://docs.google.com/drawings/d/11wnQqHgn5GFL2SXHpR4LkUIPsZo8KJPsSYUoMarDvc4/pub?w=250">
+<img src="https://docs.google.com/drawings/d/11wnQqHgn5GFL2SXHpR4LkUIPsZo8KJPsSYUoMarDvc4/pub?w=400">
 
 ```html
 <a-sphere
