@@ -94,7 +94,7 @@ developers get more done with less effort. One such framework is
         <a-sphere
           color="yellow"
         ></a-sphere>
-      </scene>
+      </a-scene>
     </body>
   </html>
   ```
@@ -218,7 +218,7 @@ We should be able to walk around on a grid. Now let's pull in our 3D model
 
 1. In your `a-assets` section add
 ```html
-<a-asset-item id="doors" src="https://webvr.austincodingacademy.com/demo/model/model.dae"></a-asset-item>
+<a-asset-item id="doors" src="https://webvr.austincodingacademy.com/demo/model.dae"></a-asset-item>
 ```
 this will load our model.
 
