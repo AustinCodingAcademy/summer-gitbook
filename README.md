@@ -75,6 +75,7 @@ developers get more done with less effort. One such framework is
   </html>
   ```
   Refresh your browser and now you should see a little pair of goggles. Good!
+  ![goggles](./images/goggles.png)
 
 1. Baller, shot caller! Let's add a `<a-sphere>`
   ```html
@@ -94,6 +95,7 @@ developers get more done with less effort. One such framework is
   ```
   Now refresh the the browser. AAnnndd we see..nothing! WTF? Try backing up with
   the arrow keys. The ball should come into view. We were standing on it!
+  ![sphere](./images/sphere.png)
 
 ### 3. Position Yo Self
 <img src="https://docs.google.com/drawings/d/1GlFDWXrL-MGIjP0w83-VKmJ8C_y0kcI53lONwQgXNvY/pub?w=250">
@@ -127,7 +129,7 @@ First, we add an `<a-assets></a-assets>` element to our `scene`. Then inside,
 we can link to an image and give it an `id`
 ```html
 <a-assets>
-  <img id="smile" src="smile.jpg">
+  <img id="smile" src="https://webvr.austincodingacademy.com/demo/smile.jpg">
 </a-assets>
 ```
 
@@ -137,7 +139,7 @@ then on our `a-sphere` we can add a `material` attribute linking to that `id`
 <a-sphere material="src: #smile" position="0 2 -3" color="yellow"></a-sphere>
 ```
 
-Boom! We have a smiley face giving us the cold shoulder. Let's rotate it towards us.
+Boom! We have a creepy smiley face giving us the cold shoulder. Let's rotate it towards us.
 
 ### 5. Rotation
 <img src="https://docs.google.com/drawings/d/11wnQqHgn5GFL2SXHpR4LkUIPsZo8KJPsSYUoMarDvc4/pub?w=250">
@@ -145,6 +147,7 @@ Boom! We have a smiley face giving us the cold shoulder. Let's rotate it towards
 ```html
 <a-sphere material="src: #smile" position="0 2 -3" color="yellow" rotation="0 -90 0"></a-sphere>
 ```
+![smily](./images/smily.png)
 
 ## Importing 3D Models
 Building models from scratch is fun, but we can get some real work down importing
@@ -158,8 +161,8 @@ file and import it into our scene. Let's use this COLLADA file as an demo.
 ### Show me the `grid`
 Let's start by:
 1. adding two shiny new libraries
-1. hiding the smiley
-1. sphere for now, and giving ourselves a nice little `static` `grid` to stand on
+1. hiding the smiley sphere for now,
+1. giving ourselves a nice little `static` `grid` to stand on
 
 ```html
 <!DOCTYPE html>
@@ -182,6 +185,7 @@ Let's start by:
   </body>
 </html>
 ```
+![grid](./images/grid.png)
 
 ### I'm a `collada-model`
 We should be able to walk around on a grid. Now let's pull in our 3D model
@@ -200,7 +204,9 @@ this will load our model.
   </a-entity>
   ```
 
-  Bam! Through a few monsters and blood stains and we have ourselves a DOOM clone.
+  Bam! An instant eerie hallway.
+  ![hall](./images/hall.png)
+
 
 ### Don't hate the player
 But when we put the headsets on ourselves, (and on our friends, family, SXSW acquaintances, pets, etc)
@@ -254,18 +260,23 @@ Here is our final code
 ```
 
 ## Challenge - Let's play Find that Smile!
-Let's uncomment our smiley ball, shrink it up a bit, and use `position` to hide
+Let's uncomment our smiley ball, shrink it up a bit using the `radius` attribute, and use `position` to hide
 it somewhere in the house. If you're really clever, you can figure out the bounds
-of the building and try to randomize the `position` on load!
+of the building and try to randomize the `position` on load with JavaScript! Post your solutions and comments below!
 
-You can view the hosted solution at [here](https://webvr.austincodingacademy.com/demo)
+hint: You can use the A-Frame Inspector by pressing `alt` + `control` + `i` to see a birdseye view of the
+scene.
+
+![inspector](./images/inspector.png)
+
+You can view the hosted solution [here](https://webvr.austincodingacademy.com/demo).
 Try it out on your phone in your Cardboard!
 
 Here is the [source](https://github.com/AustinCodingAcademy/webvr-gitbook/tree/master/demo)
 
-Want another? How about the [first level of DOOM](https://webvr.austincodingacademy.com/demo)!
+Want another? How about the [first level of DOOM](https://webvr.austincodingacademy.com/doom)!
 
-[source](https://github.com/AustinCodingAcademy/webvr-gitbook/tree/master/doom)
+[source](https://github.com/AustinCodingAcademy/webvr-gitbook/tree/master/doom) | [credit](https://3dwarehouse.sketchup.com/model.html?id=a343ff4560eeee86134bb2d5b6773b)
 
 ## Bonus - Host your own work!
 
