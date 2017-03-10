@@ -12,6 +12,8 @@ Anywhere with a modern browser! While you can view the Virtual Reality "scene"
 on your desktop or computer, its interactivity really shines with the
 devices mentioned above, and even on your smartphone!
 
+<img src="https://docs.google.com/drawings/d/1RmO4KD9ks46Uj1tw4QSkh9FmVz2mcOaZajp6x409yjs/pub?w=354&amp;h=255">
+
 ## Where did it come from?
 
 ### WebGL (2009)
@@ -75,6 +77,7 @@ developers get more done with less effort. One such framework is
   </html>
   ```
   Refresh your browser and now you should see a little pair of goggles. Good!
+
   ![goggles](./images/goggles.png)
 
 1. Baller, shot caller! Let's add a `<a-sphere>`
@@ -97,6 +100,7 @@ developers get more done with less effort. One such framework is
   ```
   Now refresh the the browser. AAnnndd we see..nothing! WTF? Try backing up with
   the arrow keys. The ball should come into view. We were standing on it!
+
   ![sphere](./images/sphere.png)
 
 ### 3. Position Yo Self
@@ -226,6 +230,7 @@ this will load our model.
   ```
 
   Bam! An instant eerie hallway.
+  
   ![hall](./images/hall.png)
 
 
