@@ -221,10 +221,10 @@ devices mentioned above, and even on your smartphone!</p>
 browser is only capable of reading three languages: HTML, CSS, and JavaScript.
 Lately, most of the popular browsers have implemented a new JavaScript feature called
 <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API" target="_blank">WebGL</a>, which allows
-your browser to render 2D and 3D scenes by tapping into your device hardware (think CPU,
+your browser to render 2D and 3D scenes by tapping into your device&apos;s hardware (think CPU,
 RAM, etc).</p>
-<h3 id="threejs-2010">Three.js (2010)</h3>
-<p>WebGL was a huge feature for JavaScript, and <a href="https://threejs.org/" target="_blank">Three.js</a>,
+<h3 id="threejs-2010">three.js (2010)</h3>
+<p>WebGL was a huge feature for JavaScript, and <a href="https://threejs.org/" target="_blank">three.js</a>,
 among <a href="https://en.wikipedia.org/wiki/Three.js#Overview" target="_blank">others</a>, came along to
 help developers build with the WebGL API more easily.</p>
 <h3 id="a-frame-2015">A-Frame (2015)</h3>
@@ -296,7 +296,7 @@ the arrow keys. The ball should come into view. We were standing on it!
 </li>
 </ol>
 <h3 id="3-position-yo-self">3. Position Yo Self</h3>
-<p><img src="https://docs.google.com/drawings/d/1GlFDWXrL-MGIjP0w83-VKmJ8C_y0kcI53lONwQgXNvY/pub?w=250"></p>
+<p><img src="https://docs.google.com/drawings/d/1GlFDWXrL-MGIjP0w83-VKmJ8C_y0kcI53lONwQgXNvY/pub?w=400"></p>
 <p>The reason the ball started out under us was because we all start out at <code>position=&quot;0 0 0&quot;</code>,
 even shapes. When we backed up, we increased our <code>z</code> position which
 put our sphere out in front. Now instead of us having to move back (your audience might
@@ -310,7 +310,10 @@ not know to do that) let&apos;s push the sphere forward by assigning it a negati
   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">a-sphere</span> <span class="hljs-attr">position</span>=<span class="hljs-string">&quot;0 2 -3&quot;</span> <span class="hljs-attr">color</span>=<span class="hljs-string">&quot;yellow&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-sphere</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a-sphere</span>
+        <span class="hljs-attr">position</span>=<span class="hljs-string">&quot;0 2 -3&quot;</span>
+        <span class="hljs-attr">color</span>=<span class="hljs-string">&quot;yellow&quot;</span>
+      &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-sphere</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">scene</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
@@ -325,12 +328,22 @@ we can link to an image and give it an <code>id</code></p>
 <span class="hljs-tag">&lt;/<span class="hljs-name">a-assets</span>&gt;</span>
 </code></pre>
 <p>then on our <code>a-sphere</code> we can add a <code>material</code> attribute linking to that <code>id</code></p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-sphere</span> <span class="hljs-attr">material</span>=<span class="hljs-string">&quot;src: #smile&quot;</span> <span class="hljs-attr">position</span>=<span class="hljs-string">&quot;0 2 -3&quot;</span> <span class="hljs-attr">color</span>=<span class="hljs-string">&quot;yellow&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-sphere</span>&gt;</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-sphere</span>
+  <span class="hljs-attr">material</span>=<span class="hljs-string">&quot;src: #smile&quot;</span>
+  <span class="hljs-attr">position</span>=<span class="hljs-string">&quot;0 2 -3&quot;</span>
+  <span class="hljs-attr">color</span>=<span class="hljs-string">&quot;yellow&quot;</span>
+&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-sphere</span>&gt;</span>
 </code></pre>
-<p>Boom! We have a creepy smiley face giving us the cold shoulder. Let&apos;s rotate it towards us.</p>
+<p><img src="images/side.png" alt="side">
+Boom! We have a creepy smiley face giving us the cold shoulder. Let&apos;s rotate it towards us.</p>
 <h3 id="5-rotation">5. Rotation</h3>
 <p><img src="https://docs.google.com/drawings/d/11wnQqHgn5GFL2SXHpR4LkUIPsZo8KJPsSYUoMarDvc4/pub?w=250"></p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-sphere</span> <span class="hljs-attr">material</span>=<span class="hljs-string">&quot;src: #smile&quot;</span> <span class="hljs-attr">position</span>=<span class="hljs-string">&quot;0 2 -3&quot;</span> <span class="hljs-attr">color</span>=<span class="hljs-string">&quot;yellow&quot;</span> <span class="hljs-attr">rotation</span>=<span class="hljs-string">&quot;0 -90 0&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-sphere</span>&gt;</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-sphere</span>
+  <span class="hljs-attr">material</span>=<span class="hljs-string">&quot;src: #smile&quot;</span>
+  <span class="hljs-attr">position</span>=<span class="hljs-string">&quot;0 2 -3&quot;</span>
+  <span class="hljs-attr">color</span>=<span class="hljs-string">&quot;yellow&quot;</span>
+  <span class="hljs-attr">rotation</span>=<span class="hljs-string">&quot;0 -90 0&quot;</span>
+&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-sphere</span>&gt;</span>
 </code></pre>
 <p><img src="images/smily.png" alt="smily"></p>
 <h2 id="importing-3d-models">Importing 3D Models</h2>
@@ -362,7 +375,12 @@ file and import it into our scene. Let&apos;s use this COLLADA file as an demo.<
       <span class="hljs-tag">&lt;<span class="hljs-name">a-assets</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;smile&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://webvr.austincodingacademy.com/demo/smile.jpg&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">a-assets</span>&gt;</span>
-      <span class="hljs-comment">&lt;!-- &lt;a-sphere material=&quot;src: #smile&quot; position=&quot;0 2 -3&quot; color=&quot;yellow&quot; rotation=&quot;0 -90 0&quot;&gt;&lt;/a-sphere&gt; --&gt;</span>
+      <span class="hljs-comment">&lt;!-- &lt;a-sphere
+        material=&quot;src: #smile&quot;
+        position=&quot;0 2 -3&quot;
+        color=&quot;yellow&quot;
+        rotation=&quot;0 -90 0&quot;
+      &gt;&lt;/a-sphere&gt; --&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">a-grid</span> <span class="hljs-attr">static-body</span> <span class="hljs-attr">geometry</span>=<span class="hljs-string">&quot;width:100; height: 100;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-grid</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">scene</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
@@ -418,7 +436,12 @@ a <code>#player</code> to walk around, now we just need to put him in the <code>
       <span class="hljs-tag">&lt;<span class="hljs-name">a-asset-item</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;doors&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://webvr.austincodingacademy.com/demo/model.dae&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-asset-item</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;smile&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://webvr.austincodingacademy.com/demo/smile.jpg&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">a-assets</span>&gt;</span>
-    <span class="hljs-comment">&lt;!-- &lt;a-sphere material=&quot;src: #smile&quot; position=&quot;0 2 -3&quot; color=&quot;yellow&quot; rotation=&quot;0 -90 0&quot;&gt;&lt;/a-sphere&gt; --&gt;</span>
+    <span class="hljs-comment">&lt;!-- &lt;a-sphere
+      material=&quot;src: #smile&quot;
+      position=&quot;0 2 -3&quot;
+      color=&quot;yellow&quot;
+      rotation=&quot;0 -90 0&quot;
+    &gt;&lt;/a-sphere&gt; --&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">a-entity</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;player&quot;</span>
       <span class="hljs-attr">camera</span>
       <span class="hljs-attr">universal-controls</span>=<span class="hljs-string">&quot;movementControls: automove, gamepad, keyboard&quot;</span>
@@ -494,7 +517,7 @@ and commit the file.</li>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"WebVR 101","level":"1.1","depth":1,"next":{"title":"Austin Coding Academy","level":"1.2","depth":1,"url":"https://austincodingacademy.com","ref":"https://austincodingacademy.com","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["edit-link","ga","collapsible-chapters","replace-with-index-html","disqus"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"austincodingacademy"},"search":{},"collapsible-chapters":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"replace-with-index-html":{},"ga":{"configuration":{"name":"WebVR"},"token":"UA-68821515-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/AustinCodingAcademy/webvr-gitbook/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-03-10T04:08:13.697Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-10T04:09:36.638Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"WebVR 101","level":"1.1","depth":1,"next":{"title":"Austin Coding Academy","level":"1.2","depth":1,"url":"https://austincodingacademy.com","ref":"https://austincodingacademy.com","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["edit-link","ga","collapsible-chapters","replace-with-index-html","disqus"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"austincodingacademy"},"search":{},"collapsible-chapters":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"replace-with-index-html":{},"ga":{"configuration":{"name":"WebVR"},"token":"UA-68821515-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/AustinCodingAcademy/webvr-gitbook/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-03-10T04:29:38.821Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-10T04:31:02.157Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
