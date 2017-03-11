@@ -5,4 +5,4 @@
 * [Austin Coding Academy](https://austincodingacademy.com)
 * [San Antonio Coding Academy](https://sanantoniocodingacademy.com)
 * [Dallas Coding Academy](https://dallascodingacademy.com)
-* [Houston Coding Academy](https://houstoncodingacademy.com)
+* [Houston Coding Academy](https://houstontxcodingacademy.com)
