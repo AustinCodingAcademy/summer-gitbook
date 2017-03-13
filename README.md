@@ -94,7 +94,7 @@ developers get more done with less effort. One such framework is
         <a-sphere
           color="yellow"
         ></a-sphere>
-      </scene>
+      </a-scene>
     </body>
   </html>
   ```
@@ -218,7 +218,7 @@ We should be able to walk around on a grid. Now let's pull in our 3D model
 
 1. In your `a-assets` section add
 ```html
-<a-asset-item id="doors" src="https://webvr.austincodingacademy.com/demo/model/model.dae"></a-asset-item>
+<a-asset-item id="doors" src="https://webvr.austincodingacademy.com/demo/model.dae"></a-asset-item>
 ```
 this will load our model.
 
@@ -314,13 +314,7 @@ Want another? How about the [first level of DOOM](https://webvr.austincodingacad
 1. Make an account on https://github.com
 1. Verify your email
 1. Create a new repository using your username called `<your username here>.github.io`
-1. click "include a README", and put something like
-   ```markdown
-   # This is my first WebVR project!
-   Go to <your username here>.github.io to see it on your mobile device!
-   ```
-   and commit the file.
-1. Click "Create new file", name it `index.html`, copy/paste your code, and commit.
+1. click "include a README", name it `index.html`, copy/paste your code, and commit.
 1. Visit `<your username here>.github.io` on your phone! You're a WebVR developer now!
 1. Tell literally everybody at least twice.
 
