@@ -13,12 +13,20 @@
   <a-scene>
     <a-assets>
       <a-asset-item id="doom" src="https://webvr.austincodingacademy.com/doom/model.dae"></a-asset-item>
+      <img id="smile" src="https://webvr.austincodingacademy.com/demo/KeepAustinCoding.jpg">
     </a-assets>
+    <a-sphere
+      material="src: #smile"
+      position="3 2 -4"
+      radius="0.88"
+      color="#fff"
+      rotation="0 180 0"
+    ></a-sphere>
     <a-entity id="player"
       camera
       universal-controls="movementControls: automove, gamepad, keyboard"
       kinematic-body
-      position="0 8 0"
+      position="30 8 20"
     ></a-entity>
     <a-entity position="-3 -1 5.5">
       <a-entity collada-model="#doom" position="0 1.1 0"></a-entity>
