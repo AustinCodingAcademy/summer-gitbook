@@ -1,6 +1,6 @@
 AFRAME.registerComponent('automove-controls', {
     init: function () {
-        this.speed = 0.4;
+        this.speed = 0.2;
         this.isMoving = true;
         this.velocityDelta = new THREE.Vector3();
     },
