@@ -203,7 +203,46 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p><img src="images/logos/ACA_standard_horizontal.png" alt="ACA logo" style="max-width: 500px"></p>
+                                <p><div style="display: flex; align-items: center">
+  <img alt="logo" id="logo-img" src="http://en.gravatar.com/userimage/107370100/a08594145564536138dfaaf072c7b241.png">
+  <h1 style="margin: 0 10px;" id="
+----austin
+----coding-academy
+--">
+    <span id="logo-city">Austin</span>
+    Coding Academy
+  </h1>
+</div></p>
+<script type="text/javascript">
+  var img, city, key;
+  switch (window.location.host) {
+    case 'student.houstontxcodingacademy.com':
+      img = "https://en.gravatar.com/userimage/107370100/8929bf98bfb0323911888716a93da00b.png";
+      city = "Houston";
+      key = "houstontx";
+      break;
+    case 'student.sanantoniocodingacademy.com':
+      img = "https://secure.gravatar.com/userimage/107370100/0918789e7818ad581794ec8ae0a889d8.png";
+      city = "San Antonio";
+      key = "sanantonio";
+      break;
+    case 'student.dallascodingacademy.com':
+      img = "https://secure.gravatar.com/userimage/107370100/4e6f9d7f5c483b96ca3907d1929ea27c.png";
+      city = "Dallas";
+      key = "dallas";
+      break;
+    default:
+      img = "http://en.gravatar.com/userimage/107370100/a08594145564536138dfaaf072c7b241.png";
+      city = "Austin";
+      key = "austin";
+      break;
+  }
+  document.getElementById('logo-img').setAttribute('src', img);
+  document.getElementById('logo-city').innerText = city;
+  document.querySelector('link[rel="shortcut icon"]').setAttribute('href', 'gitbook/images/' + key + '.ico');
+</script>
+
+
 <h1 id="webvr-101">WebVR 101</h1>
 <h2 id="what-is-webvr">What is WebVR?</h2>
 <blockquote>
@@ -517,7 +556,7 @@ Try it out on your phone in your Cardboard!</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"WebVR 101","level":"1.1","depth":1,"next":{"title":"Austin Coding Academy","level":"1.2","depth":1,"url":"https://austincodingacademy.com","ref":"https://austincodingacademy.com","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["edit-link","ga","collapsible-chapters","replace-with-index-html","disqus"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"austincodingacademy"},"search":{},"collapsible-chapters":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"replace-with-index-html":{},"ga":{"configuration":{"name":"WebVR"},"token":"UA-68821515-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/AustinCodingAcademy/webvr-gitbook/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-03-16T21:34:03.381Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-16T21:35:19.323Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"WebVR 101","level":"1.1","depth":1,"next":{"title":"Austin Coding Academy","level":"1.2","depth":1,"url":"https://austincodingacademy.com","ref":"https://austincodingacademy.com","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["edit-link","ga","collapsible-chapters","replace-with-index-html","disqus"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"austincodingacademy"},"search":{},"collapsible-chapters":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"replace-with-index-html":{},"ga":{"configuration":{"name":"WebVR"},"token":"UA-68821515-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/AustinCodingAcademy/webvr-gitbook/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-03-30T23:12:52.881Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-30T23:14:17.675Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
