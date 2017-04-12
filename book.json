@@ -3,7 +3,10 @@
     "edit-link",
     "ga",
     "collapsible-chapters",
-    "replace-with-index-html"
+    "replace-with-index-html",
+    "wide-page",
+    "hidden",
+    "-sharing"
   ],
   "pluginsConfig": {
     "ga": {
@@ -15,6 +18,9 @@
     "edit-link": {
       "base": "https://github.com/AustinCodingAcademy/webvr-gitbook/edit/master/",
       "label": "Edit This Page"
+    },
+    "hidden": {
+      "usernames": ["aca-staff"]
     }
   },
   "structure": {
