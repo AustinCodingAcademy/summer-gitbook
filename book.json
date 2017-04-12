@@ -1,24 +1,23 @@
 {
-    "plugins": [
-        "edit-link",
-        "ga",
-        "collapsible-chapters",
-        "replace-with-index-html",
-        "disqus"
-    ],
-    "pluginsConfig": {
-        "ga": {
-            "token": "UA-68821515-2",
-            "configuration": {
-                "name": "WebVR"
-            }
-        },
-        "edit-link": {
-            "base": "https://github.com/AustinCodingAcademy/webvr-gitbook/edit/master/",
-            "label": "Edit This Page"
-        },
-        "disqus": {
-          "shortName": "austincodingacademy"
-        }
+  "plugins": [
+    "edit-link",
+    "ga",
+    "collapsible-chapters",
+    "replace-with-index-html"
+  ],
+  "pluginsConfig": {
+    "ga": {
+      "token": "UA-68821515-2",
+      "configuration": {
+        "name": "WebVR"
+      }
+    },
+    "edit-link": {
+      "base": "https://github.com/AustinCodingAcademy/webvr-gitbook/edit/master/",
+      "label": "Edit This Page"
     }
+  },
+  "structure": {
+    "readme": "home.md"
+  }
 }
