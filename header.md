@@ -5,6 +5,7 @@
     Coding Academy
   </h1>
 </div>
+
 <script type="text/javascript">
   var img, city, key;
   switch (window.location.host.split('.')[1]) {
