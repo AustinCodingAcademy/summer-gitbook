@@ -12,11 +12,11 @@
     "ga": {
       "token": "UA-68821515-2",
       "configuration": {
-        "name": "WebVR"
+        "name": "Summer Camp"
       }
     },
     "edit-link": {
-      "base": "https://github.com/AustinCodingAcademy/webvr-gitbook/edit/master/",
+      "base": "https://github.com/AustinCodingAcademy/summer-gitbook/edit/master/",
       "label": "Edit This Page"
     },
     "hidden": {
