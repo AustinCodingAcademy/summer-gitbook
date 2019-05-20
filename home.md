@@ -1,5 +1,5 @@
 {% include "./header.md" %}
 
-## Welcome to the WebVR Gitbook!
+## Welcome to the Summer Gitbook!
 
 {% include "./footer.md" %}
