@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/AustinCodingAcademy/webvr-gitbook.svg?style=svg&circle-token=e698f846a15e5d50866237fe190231003ffddbd5)](https://circleci.com/gh/AustinCodingAcademy/webvr-gitbook)
+[![CircleCI](https://circleci.com/gh/AustinCodingAcademy/summer-gitbook.svg?style=svg&circle-token=e698f846a15e5d50866237fe190231003ffddbd5)](https://circleci.com/gh/AustinCodingAcademy/summer-gitbook)
 
 ![](http://en.gravatar.com/userimage/107370100/a08594145564536138dfaaf072c7b241.png)
 # Austin Coding Academy
