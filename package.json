@@ -1,4 +1,10 @@
 {
+  "name": "summer",
+  "version": "1.0.0",
+  "description": "Summer Camp Curriculum",
+  "repository": "git@github.com:AustinCodingAcademy/summer-gitbook.git",
+  "license": "UNLICENSED",
+  "private": true,
   "dependencies": {
     "gitbook-cli": "2.3.0",
     "gitbook-plugin-collapsible-chapters": "^0.1.8",
@@ -9,9 +15,9 @@
     "gitbook-plugin-wide-page": "^1.0.1"
   },
   "scripts": {
-    "postinstall": "gitbook install && gitbook build",
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "gitbook": "gitbook"
+    "postinstall": "gitbook install",
+    "heroku-postbuild": "gitbook install && gitbook build",
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "devDependencies": {
     "gh-pages": "^0.12.0"
