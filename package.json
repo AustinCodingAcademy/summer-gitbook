@@ -15,7 +15,7 @@
     "gitbook-plugin-wide-page": "^1.0.1"
   },
   "scripts": {
-    "postinstall": "gitbook install && gitbook build",
+    "postinstall": "gitbook install && gitbook build"
   },
   "devDependencies": {
     "gh-pages": "^0.12.0"
