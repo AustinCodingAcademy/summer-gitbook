@@ -26,5 +26,5 @@ jobs:
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               git config --global user.email "kevin@austincodingacademy.com"
               git config --global user.name "Kevin Colten"
-              npx gh-pages --dotfiles --dist _site/
+              npx gh-pages --dotfiles --dist _book/
             fi
