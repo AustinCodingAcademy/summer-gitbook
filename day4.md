@@ -3,111 +3,180 @@
 ## Day 4
 
 ### Objectives
-* Students will draft a marketing plan for their business
-* Students will create a pitch deck to promote their business. 
+* Students will deploy their website using Git and Github. 
 
 ### Agenda
-* Marketing Plan
-* Pitch Deck
-* Work on Website
+* Deployment
 
-### Marketing Plan
+### Website Build
 
-A marketing plan is a plan to market your company. Marketing means creating relationships with and satisfying customers. 
+1. Keep working on your website!
+1. Use CSS to make your website visually appealing. 
 
-A marketing plan contains one or more marketing strategies. It is the framework from which all of your marketing strategies are created, and helps you connect each strategy back to a larger marketing operation and business goal.
+### The 5 Types of Selectors
+<!-- Give them our writting of the subject then link to a few articles: Medium, Wikipedia, CSS-Tricks, W3S, MozillaDev, etc... that help give more perspective on the subject  -->
 
-#### How to Write a Marketing Plan
+**There are five types of selectors**
 
-1. Business Mission - what are you trying to accomplish?
-1. Determine the Key Performance Indicators (KPI's) for this mission - what does success look like?
-1. Identify the buyer - who is buying your products or services?
-1. Describe your content initiatives and strategies - how are you going to get them to buy your product or service?
+  * _types_ - This is the element on the document, i.e. ```<p></p>, <h4></h4>, <div></div>, <section></section>``` and so on.
+  * _ids_ - This is added inside the element's opening tag and denoted with a "#". ```html <article id="element_ID"> text goes here </article>```
+  * _classes_  - This is denoted by the keyword: class="someClassNameHere" ```html <article class="element_class"> text goes here </article>```
+  * _attributes_ - ```<input disabled >``` For a full list of [html attributes](https://www.w3schools.com/html/html_attributes.asp).
+  * _pseudo-classes_ are selectors used on an element when something is done to them like when you hover over an element with your cursor: ```:hover { }``` 
 
+#### Type Selectors
+The `type selector` simply selects any element specified by its type. Unless you modify it with additional selections, a type selector will affect every instance of that type. If you write one `a` selector, you would then change the styling for every `a` element within the page. Because of this, type selectors are usually reserved for doing just that:
 
-* Business Mission - what are you trying to accomplish?
+`index.html`
+```html
+<a href="#">link</a>
+```
 
-Your first step in writing a marketing plan is to state your mission. Although this mission is specific to your marketing department, it should serve your business's main mission statement. Be specific, but not too specific. You have plenty of space left in this marketing plan to elaborate on how you'll acquire new customers and accomplish this mission.
+`css/style.css`
+```css
+a {
+  text-decoration: none; // removes the underline
+}
+```
 
-For example, if your business's mission is "to make booking travel a delightful experience," your marketing mission might be "to attract an audience of travelers, educate them on the tourism industry, and convert them into users of our bookings platform."
+#### ID Selectors
+The `id` selector is used for a unique element, which means that the `id` should only be used **one time**, on **one element**, per page. Simply add an id `attribute` and a value.
 
-* Determine the Key Performance Indicators (KPI's) for this mission - what does success look like?
+`index.html`
+```html
+<div id="mario"></div>
+```
 
-Every good marketing plan describes how the department will track its mission's progress. To do so, you'll need to determine your key performance indicators, or "KPIs" for short. KPIs are individual metrics that measure the various elements of a marketing campaign. These units help you establish short-term goals within your mission and communicate your progress to business leaders.
+`css/style.css`
+```css
+#mario {
+  color: red;
+}
+```
 
-Let's take our example marketing mission from the above step. If part of our mission is "to attract an audience of travelers," we might track websites visits using organic page views. In this case, "organic page views" is one KPI, and we can see our number of page views grow over time.
+#### Class selectors
+The `class` selector is very similar to the `id` selector, but `class` can be shared with more elements. You can apply classes multiple times on a page to any element you want.
 
-These KPIs will come into the conversation again in step 4, below.
+`index.html`
+```html
+<div class="luigi"></div>
+<!-- more html -->
+<section class="luigi"></section>
+```
 
-* Identify the buyer - who is buying your products or services?
+`css/style.css`
+```css
+.luigi {
+  color: green;
+}
+```
 
-A buyer persona is a description of whom you want to attract. This can include age, sex, location, family size, job title, and more. Each buyer persona should be a direct reflection of your business's customers and potential customers. Therefore, it's critical that business leaders all agree on what your buyer personas are.
+#### Attribute Selectors
+You are not restricted to the two attributes, `class` and `id`. You can specify other element-specific attributes by using `[square brackets]`. Inside the brackets you put the attribute name, optionally followed by a matching operator and a value.
 
-You can develop buyer personas for free right here.
+`index.html`
+```html
+<a disabled>I'm a disabled link!</a>
 
-* Describe your content initiatives and strategies - how are you going to get them to buy your product or service?
+<input type="button">
+```
 
-Here's where you'll include the main points of your marketing and content strategy. Because there are a laundry list of content types and channels available to you today, it's critical that you choose wisely and explain how you'll use your content and channels in this section of your marketing plan.
+`css/style.css`
+```css
+[disabled] {
+  color: gray;
+}
 
-<!-- A content strategy should stipulate:
+[type="button"] {
+  font-size: 16px;
+}
+```
 
-Which types of content you'll create. These can include blog posts, YouTube videos, infographics, ebooks, and more.
-How much of it you'll create. You can describe content volume in daily, weekly, monthly, or even quarterly intervals. It all depends on your workflow and the short-term goals you set for your content.
-The goals (and KPIs) you'll use to track each type. KPIs can include organic traffic, social media traffic, email traffic, and referral traffic. Your goals should also include which pages you want to drive that traffic to, such as product pages, blog pages, or landing pages.
-The channels on which you'll distribute this content. Some popular channels at your disposal include Facebook, Twitter, LinkedIn, YouTube, Pinterest, and Instagram. 
-Any paid advertising that will take place on these channels.-->
+### See It - CSS Selectors
+<!-- Can be a video on youTube as long as it doesn't go to another code school. Eventually all video content should come from ACA. -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/emMO3iCpvrc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-<!-- 1. Clearly define your plan's omissions.  
+### Practice It - CSS Selectors
+<!-- Section for Code Pen -->
 
-A marketing plan explains what the marketing team is going to focus on. However, it also explains what the marketing team is not going to focus on.
+**CodePen Instructions**
+* Make the font change colors.
+* Change the font style.
+* Change the size of the font.
+* Change background color.
+* Get the text to be centered in the middle of the page.
 
-If there are other aspects of your business that you aren't serving in this particular plan, include them in this section. These omissions help to justify your mission, buyer personas, KPIs, and content. You can't please everyone in a single marketing campaign, and if your team isn't on the hook for something, you need to make it known. -->
+<p data-height="265" data-theme-id="0" data-slug-hash="pempxa" data-default-tab="html,result" data-user="austincoding" data-embed-version="2" data-pen-title="Beginning with CSS" class="codepen">See the Pen <a href="http://codepen.io/austincoding/pen/pempxa/">Beginning with CSS</a> by Austin Coding Academy (<a href="http://codepen.io/austincoding">@austincoding</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-<!-- 1. Define your marketing budget.
+<hr/>
 
-Your content strategy might leverage many free channels and platforms, but there are a number of hidden expenses to a marketing team that need to be accounted for.
+## Pseudo Selectors
 
-Whether it's freelance fees, sponsorships, or a new full-time marketing hire, use these costs to develop a marketing budget and outline each expense in this section of your marketing plan.
+#### Pseudo-class selectors
+A CSS pseudo-class is a keyword added to selectors that specifies a special *characteristic* or *state* of the element in question. For example `:hover` will apply a style when the user's mouse hovers over the element specified by the selector. These special state attributes won't be explicitly written in HTML, but are present nonetheless, ready to be manipulated using CSS.
 
-1. Identify your competition.
+  `css/style.css`
+  ```css
+  selector:pseudo-class {
+    property: value;
+  }
+  ```
+#### Practice it - Pseudo Selectors
+**Instruction**
+* Click the "Edit on CodePen" in the top right
+* Make ```<h1></h1>``` tag in the html
+* In the CSS, psuedo-select it with a ```:hover``` and make it change to a color of your choice when you hover on it. 
 
-Part of marketing is knowing whom you're marketing against. Research the key players in your industry and consider profiling each one in this section.
+<p data-height="235" data-theme-id="0" data-slug-hash="grVaJL" data-default-tab="html,result" data-user="mistakevin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/mistakevin/pen/grVaJL/">grVaJL</a> by Kevin Colten (<a href="http://codepen.io/mistakevin">@mistakevin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+  <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-Keep in mind not every competitor will pose the same challenges to your business. For example, while one competitor might be ranking highly on search engines for keywords you want your website to rank for, another competitor might have a heavy footprint on a social network where you plan to launch an account.
+<hr/>
 
-1. Outline your plan's contributors and their responsibilities.
+**Instructions**:
+Open the CodePen Below. Follow the directions in the comment section of the CSS to learn more about selectors. They are also written below for your convenience.
 
-With your marketing plan fully fleshed out, it's time to explain who's doing what. You don't have to delve too deeply into your employees' day-to-day projects, but it should be known which teams and team leaders are in charge of specific content types, channels, KPIs, and more. -->
+* Give the ```<body>``` element a background: #bdc3c7;
+* Make the ```<h1>``` element color: #9b59b6;
+* Make all ```<h2>``` elements color: orange;
+* Make all ```<li>``` elements blue(Use this [tool](https://chrome.google.com/webstore/detail/eye-dropper/hmdcmlfkchdmnmnmheododdhjedfccka?hl=en) to pick your own hexadecimal blue)
+* Change the background on every paragraph to be background: yellow;
+* Make all inputs have a border: solid red 3px;
+* Give everything with the class 'hello' a white background
+* Give the element with id 'special' a 2px solid blue border(pick your own [rgb](https://www.w3schools.com/cssref/css_colors_legal.asp) blue) #special {border: #ff0000}
+* Make all the ```<p>'s``` that are nested inside of divs 25px font(font-size: 25px)
+* Make only inputs with type 'text' have a gray background
+* Give both ```<p>'s``` inside the 3rd ```<div>``` a pink background
+* Give the 2nd ```<p>``` inside the 3rd ```<div>``` a 5px white border
+* Make the ```<em>``` in the 3rd ```<div>``` element white and 20px font(font-size:20px)
+* __BONUS CHALLENGES__
+* You may need to research some other selectors and properties
+* Make all "checked" checkboxes have a left margin of 50px(margin-left: 50px)
+* Make the ```<label>``` elements all UPPERCASE without changing the HTML(definitely look this one up
+* Make the first letter of the element with id 'special' green and 100px font size(font-size: 100)
+* Make the ```<h1>``` element's color change to blue when hovered over 
+* Make the ```<a>``` element's that have been visited gray 
 
-#### Example Marketing Plans
+<p data-height="265" data-theme-id="0" data-slug-hash="YQWNjK" data-default-tab="html,result" data-user="austincoding" data-embed-version="2" data-pen-title="CSS  Selectors Practice Exercise" class="codepen">See the Pen <a href="https://codepen.io/austincoding/pen/YQWNjK/">CSS  Selectors Practice Exercise</a> by Austin Coding Academy (<a href="https://codepen.io/austincoding">@austincoding</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-<iframe width="560" height="315" src="./SampleMarketingPlan.pdf" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### Deployment
 
+Once your finished working on your website, push your changes to git using the following terminal commands:
 
-### Pitch Deck
+1. In your Command Line Interface, navigate to the project folder by typing “cd summer-camp”
+1. Then type the following git commands. Press enter after each line.
+    * git add -A
+    * git commit -m “your message explaining what you did”
+        You may need to configure. Follow the instructions by typing each line with your information and pressing enter:
+            git config --global user.email “johndoe@example.com”
+            git config --global user.name "John Doe"
+    * git push origin master
+        You may need to login to github via the terminal. Type in your username and password as usual even if it doesn’t show up in the terminal. 
+1. Go to github.com and check that your code is there. 
+1. To deploy your code, navigate to “settings”
+1. Scroll down to Github Pages and change the source to “Master Branch”
+1. Navigate to the link provided to see your hosted web page. 
 
-Pitch Decks are powerful tools to attract investment in your business and to share information about your business with potential customers. Here is a stellar pitch deck to learn from:
-
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/4dpBt4w6J5whJZ" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/PitchDeckCoach/airbnb-first-pitch-deck-editable" title="AirBnB Pitch Deck " target="_blank">AirBnB Pitch Deck </a> </strong> from <strong><a href="https://www.slideshare.net/PitchDeckCoach" target="_blank">Malcolm Lewis</a></strong></div>
-
-<br>
-Power Point Tutorial
-<br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lrFVjiIj-E0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-Work on a pitch deck for our business. 
-
-Include the following:
-* Name of your business
-* A picture that represents you: [Unsplash](https://unsplash.com/)
-* What is the problem you are solving?
-* Why is the problem important?
-* How are you going to solve the problem better than anyone else?
-
-*Once finished, work on your website.*
-
-### Closing
-
-Reflect on your pitch deck and your marketing plan. How are you going to attract both investors and customers? Practice talking about how your business is important.
-
+## Congratulations! You’ve built and deployed your first website!
 {% include "./footer.md" %}
