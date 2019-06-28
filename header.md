@@ -32,8 +32,8 @@
       key = "dallas";
       break;
     default:
-      img = "https://en.gravatar.com/userimage/107370100/a08594145564536138dfaaf072c7b241.png";
-      city = "Austin";
+      img = "https://lh3.google.com/u/2/d/18-EOFosfqu1KY7FVXuUUsyTDSU-xuGYZ=w2880-h1642-iv1 <br>";
+      city = "Lubbock";
       key = "austin";
       break;
   }

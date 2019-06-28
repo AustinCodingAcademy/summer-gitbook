@@ -1,1 +1,1 @@
-&copy; 2017 Austin Coding Academy
+&copy; 2019 Lubbock Coding Academy

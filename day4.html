@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Day 4 · GitBook</title>
+        <title>Day 4 - Coding · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -115,7 +115,7 @@
                 <a href="day1.html">
             
                     
-                    Day 1
+                    Day 1 - Your Idea
             
                 </a>
             
@@ -128,7 +128,7 @@
                 <a href="day2.html">
             
                     
-                    Day 2
+                    Day 2 - Your Plans
             
                 </a>
             
@@ -141,7 +141,7 @@
                 <a href="day3.html">
             
                     
-                    Day 3
+                    Day 3 - Coding
             
                 </a>
             
@@ -154,7 +154,7 @@
                 <a href="day4.html">
             
                     
-                    Day 4
+                    Day 4 - Coding
             
                 </a>
             
@@ -167,7 +167,7 @@
                 <a href="day5.html">
             
                     
-                    Day 5
+                    Day 5 - Presentations
             
                 </a>
             
@@ -205,7 +205,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Day 4</a>
+        <a href="." >Day 4 - Coding</a>
     </h1>
 </div>
 
@@ -257,8 +257,8 @@
       key = "dallas";
       break;
     default:
-      img = "https://en.gravatar.com/userimage/107370100/a08594145564536138dfaaf072c7b241.png";
-      city = "Austin";
+      img = "https://lh3.google.com/u/2/d/18-EOFosfqu1KY7FVXuUUsyTDSU-xuGYZ=w2880-h1642-iv1 <br>";
+      city = "Lubbock";
       key = "austin";
       break;
   }
@@ -271,98 +271,161 @@
 <h2 id="day-4">Day 4</h2>
 <h3 id="objectives">Objectives</h3>
 <ul>
-<li>Students will draft a marketing plan for their business</li>
-<li>Students will create a pitch deck to promote their business. </li>
+<li>Students will deploy their website using Git and Github. </li>
 </ul>
 <h3 id="agenda">Agenda</h3>
 <ul>
-<li>Marketing Plan</li>
-<li>Pitch Deck</li>
-<li>Work on Website</li>
+<li>Deployment</li>
 </ul>
-<h3 id="marketing-plan">Marketing Plan</h3>
-<p>A marketing plan is a plan to market your company. Marketing means creating relationships with and satisfying customers. </p>
-<p>A marketing plan contains one or more marketing strategies. It is the framework from which all of your marketing strategies are created, and helps you connect each strategy back to a larger marketing operation and business goal.</p>
-<h4 id="how-to-write-a-marketing-plan">How to Write a Marketing Plan</h4>
+<h3 id="website-build">Website Build</h3>
 <ol>
-<li>Business Mission - what are you trying to accomplish?</li>
-<li>Determine the Key Performance Indicators (KPI&apos;s) for this mission - what does success look like?</li>
-<li>Identify the buyer - who is buying your products or services?</li>
-<li>Describe your content initiatives and strategies - how are you going to get them to buy your product or service?</li>
+<li>Keep working on your website!</li>
+<li>Use CSS to make your website visually appealing. </li>
 </ol>
+<h3 id="the-5-types-of-selectors">The 5 Types of Selectors</h3>
+<!-- Give them our writting of the subject then link to a few articles: Medium, Wikipedia, CSS-Tricks, W3S, MozillaDev, etc... that help give more perspective on the subject  -->
+<p><strong>There are five types of selectors</strong></p>
 <ul>
-<li>Business Mission - what are you trying to accomplish?</li>
+<li><em>types</em> - This is the element on the document, i.e. <code>&lt;p&gt;&lt;/p&gt;, &lt;h4&gt;&lt;/h4&gt;, &lt;div&gt;&lt;/div&gt;, &lt;section&gt;&lt;/section&gt;</code> and so on.</li>
+<li><em>ids</em> - This is added inside the element&apos;s opening tag and denoted with a &quot;#&quot;. <code>html &lt;article id=&quot;element_ID&quot;&gt; text goes here &lt;/article&gt;</code></li>
+<li><em>classes</em>  - This is denoted by the keyword: class=&quot;someClassNameHere&quot; <code>html &lt;article class=&quot;element_class&quot;&gt; text goes here &lt;/article&gt;</code></li>
+<li><em>attributes</em> - <code>&lt;input disabled &gt;</code> For a full list of <a href="https://www.w3schools.com/html/html_attributes.asp" target="_blank">html attributes</a>.</li>
+<li><em>pseudo-classes</em> are selectors used on an element when something is done to them like when you hover over an element with your cursor: <code>:hover { }</code> </li>
 </ul>
-<p>Your first step in writing a marketing plan is to state your mission. Although this mission is specific to your marketing department, it should serve your business&apos;s main mission statement. Be specific, but not too specific. You have plenty of space left in this marketing plan to elaborate on how you&apos;ll acquire new customers and accomplish this mission.</p>
-<p>For example, if your business&apos;s mission is &quot;to make booking travel a delightful experience,&quot; your marketing mission might be &quot;to attract an audience of travelers, educate them on the tourism industry, and convert them into users of our bookings platform.&quot;</p>
+<h4 id="type-selectors">Type Selectors</h4>
+<p>The <code>type selector</code> simply selects any element specified by its type. Unless you modify it with additional selections, a type selector will affect every instance of that type. If you write one <code>a</code> selector, you would then change the styling for every <code>a</code> element within the page. Because of this, type selectors are usually reserved for doing just that:</p>
+<p><code>index.html</code></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<p><code>css/style.css</code></p>
+<pre><code class="lang-css">a {
+  text-decoration: none; // removes the underline
+}
+</code></pre>
+<h4 id="id-selectors">ID Selectors</h4>
+<p>The <code>id</code> selector is used for a unique element, which means that the <code>id</code> should only be used <strong>one time</strong>, on <strong>one element</strong>, per page. Simply add an id <code>attribute</code> and a value.</p>
+<p><code>index.html</code></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;mario&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p><code>css/style.css</code></p>
+<pre><code class="lang-css"><span class="hljs-selector-id">#mario</span> {
+  <span class="hljs-attribute">color</span>: red;
+}
+</code></pre>
+<h4 id="class-selectors">Class selectors</h4>
+<p>The <code>class</code> selector is very similar to the <code>id</code> selector, but <code>class</code> can be shared with more elements. You can apply classes multiple times on a page to any element you want.</p>
+<p><code>index.html</code></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;luigi&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- more html --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;luigi&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+</code></pre>
+<p><code>css/style.css</code></p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.luigi</span> {
+  <span class="hljs-attribute">color</span>: green;
+}
+</code></pre>
+<h4 id="attribute-selectors">Attribute Selectors</h4>
+<p>You are not restricted to the two attributes, <code>class</code> and <code>id</code>. You can specify other element-specific attributes by using <code>[square brackets]</code>. Inside the brackets you put the attribute name, optionally followed by a matching operator and a value.</p>
+<p><code>index.html</code></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">disabled</span>&gt;</span>I&apos;m a disabled link!<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>&gt;</span>
+</code></pre>
+<p><code>css/style.css</code></p>
+<pre><code class="lang-css"><span class="hljs-selector-attr">[disabled]</span> {
+  <span class="hljs-attribute">color</span>: gray;
+}
+
+<span class="hljs-selector-attr">[type=&quot;button&quot;]</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+}
+</code></pre>
+<h3 id="see-it---css-selectors">See It - CSS Selectors</h3>
+<!-- Can be a video on youTube as long as it doesn't go to another code school. Eventually all video content should come from ACA. -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/emMO3iCpvrc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<h3 id="practice-it---css-selectors">Practice It - CSS Selectors</h3>
+<!-- Section for Code Pen -->
+<p><strong>CodePen Instructions</strong></p>
 <ul>
-<li>Determine the Key Performance Indicators (KPI&apos;s) for this mission - what does success look like?</li>
+<li>Make the font change colors.</li>
+<li>Change the font style.</li>
+<li>Change the size of the font.</li>
+<li>Change background color.</li>
+<li>Get the text to be centered in the middle of the page.</li>
 </ul>
-<p>Every good marketing plan describes how the department will track its mission&apos;s progress. To do so, you&apos;ll need to determine your key performance indicators, or &quot;KPIs&quot; for short. KPIs are individual metrics that measure the various elements of a marketing campaign. These units help you establish short-term goals within your mission and communicate your progress to business leaders.</p>
-<p>Let&apos;s take our example marketing mission from the above step. If part of our mission is &quot;to attract an audience of travelers,&quot; we might track websites visits using organic page views. In this case, &quot;organic page views&quot; is one KPI, and we can see our number of page views grow over time.</p>
-<p>These KPIs will come into the conversation again in step 4, below.</p>
+<p></p><p data-height="265" data-theme-id="0" data-slug-hash="pempxa" data-default-tab="html,result" data-user="austincoding" data-embed-version="2" data-pen-title="Beginning with CSS" class="codepen">See the Pen <a href="http://codepen.io/austincoding/pen/pempxa/" target="_blank">Beginning with CSS</a> by Austin Coding Academy (<a href="http://codepen.io/austincoding" target="_blank">@austincoding</a>) on <a href="http://codepen.io" target="_blank">CodePen</a>.</p><p></p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+<hr>
+
+<h2 id="pseudo-selectors">Pseudo Selectors</h2>
+<h4 id="pseudo-class-selectors">Pseudo-class selectors</h4>
+<p>A CSS pseudo-class is a keyword added to selectors that specifies a special <em>characteristic</em> or <em>state</em> of the element in question. For example <code>:hover</code> will apply a style when the user&apos;s mouse hovers over the element specified by the selector. These special state attributes won&apos;t be explicitly written in HTML, but are present nonetheless, ready to be manipulated using CSS.</p>
+<p>  <code>css/style.css</code></p>
+<pre><code class="lang-css">  <span class="hljs-selector-tag">selector</span><span class="hljs-selector-pseudo">:pseudo-class</span> {
+    <span class="hljs-attribute">property</span>: value;
+  }
+</code></pre>
+<h4 id="practice-it---pseudo-selectors">Practice it - Pseudo Selectors</h4>
+<p><strong>Instruction</strong></p>
 <ul>
-<li>Identify the buyer - who is buying your products or services?</li>
+<li>Click the &quot;Edit on CodePen&quot; in the top right</li>
+<li>Make <code>&lt;h1&gt;&lt;/h1&gt;</code> tag in the html</li>
+<li>In the CSS, psuedo-select it with a <code>:hover</code> and make it change to a color of your choice when you hover on it. </li>
 </ul>
-<p>A buyer persona is a description of whom you want to attract. This can include age, sex, location, family size, job title, and more. Each buyer persona should be a direct reflection of your business&apos;s customers and potential customers. Therefore, it&apos;s critical that business leaders all agree on what your buyer personas are.</p>
-<p>You can develop buyer personas for free right here.</p>
+<p></p><p data-height="235" data-theme-id="0" data-slug-hash="grVaJL" data-default-tab="html,result" data-user="mistakevin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/mistakevin/pen/grVaJL/" target="_blank">grVaJL</a> by Kevin Colten (<a href="http://codepen.io/mistakevin" target="_blank">@mistakevin</a>) on <a href="http://codepen.io" target="_blank">CodePen</a>.</p>
+  <script async src="//assets.codepen.io/assets/embed/ei.js"></script><p></p>
+<hr>
+
+<p><strong>Instructions</strong>:
+Open the CodePen Below. Follow the directions in the comment section of the CSS to learn more about selectors. They are also written below for your convenience.</p>
 <ul>
-<li>Describe your content initiatives and strategies - how are you going to get them to buy your product or service?</li>
+<li>Give the <code>&lt;body&gt;</code> element a background: #bdc3c7;</li>
+<li>Make the <code>&lt;h1&gt;</code> element color: #9b59b6;</li>
+<li>Make all <code>&lt;h2&gt;</code> elements color: orange;</li>
+<li>Make all <code>&lt;li&gt;</code> elements blue(Use this <a href="https://chrome.google.com/webstore/detail/eye-dropper/hmdcmlfkchdmnmnmheododdhjedfccka?hl=en" target="_blank">tool</a> to pick your own hexadecimal blue)</li>
+<li>Change the background on every paragraph to be background: yellow;</li>
+<li>Make all inputs have a border: solid red 3px;</li>
+<li>Give everything with the class &apos;hello&apos; a white background</li>
+<li>Give the element with id &apos;special&apos; a 2px solid blue border(pick your own <a href="https://www.w3schools.com/cssref/css_colors_legal.asp" target="_blank">rgb</a> blue) #special {border: #ff0000}</li>
+<li>Make all the <code>&lt;p&gt;&apos;s</code> that are nested inside of divs 25px font(font-size: 25px)</li>
+<li>Make only inputs with type &apos;text&apos; have a gray background</li>
+<li>Give both <code>&lt;p&gt;&apos;s</code> inside the 3rd <code>&lt;div&gt;</code> a pink background</li>
+<li>Give the 2nd <code>&lt;p&gt;</code> inside the 3rd <code>&lt;div&gt;</code> a 5px white border</li>
+<li>Make the <code>&lt;em&gt;</code> in the 3rd <code>&lt;div&gt;</code> element white and 20px font(font-size:20px)</li>
+<li><strong>BONUS CHALLENGES</strong></li>
+<li>You may need to research some other selectors and properties</li>
+<li>Make all &quot;checked&quot; checkboxes have a left margin of 50px(margin-left: 50px)</li>
+<li>Make the <code>&lt;label&gt;</code> elements all UPPERCASE without changing the HTML(definitely look this one up</li>
+<li>Make the first letter of the element with id &apos;special&apos; green and 100px font size(font-size: 100)</li>
+<li>Make the <code>&lt;h1&gt;</code> element&apos;s color change to blue when hovered over </li>
+<li>Make the <code>&lt;a&gt;</code> element&apos;s that have been visited gray </li>
 </ul>
-<p>Here&apos;s where you&apos;ll include the main points of your marketing and content strategy. Because there are a laundry list of content types and channels available to you today, it&apos;s critical that you choose wisely and explain how you&apos;ll use your content and channels in this section of your marketing plan.</p>
-<!-- A content strategy should stipulate:
+<p></p><p data-height="265" data-theme-id="0" data-slug-hash="YQWNjK" data-default-tab="html,result" data-user="austincoding" data-embed-version="2" data-pen-title="CSS  Selectors Practice Exercise" class="codepen">See the Pen <a href="https://codepen.io/austincoding/pen/YQWNjK/" target="_blank">CSS  Selectors Practice Exercise</a> by Austin Coding Academy (<a href="https://codepen.io/austincoding" target="_blank">@austincoding</a>) on <a href="https://codepen.io" target="_blank">CodePen</a>.</p><p></p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-Which types of content you'll create. These can include blog posts, YouTube videos, infographics, ebooks, and more.
-How much of it you'll create. You can describe content volume in daily, weekly, monthly, or even quarterly intervals. It all depends on your workflow and the short-term goals you set for your content.
-The goals (and KPIs) you'll use to track each type. KPIs can include organic traffic, social media traffic, email traffic, and referral traffic. Your goals should also include which pages you want to drive that traffic to, such as product pages, blog pages, or landing pages.
-The channels on which you'll distribute this content. Some popular channels at your disposal include Facebook, Twitter, LinkedIn, YouTube, Pinterest, and Instagram. 
-Any paid advertising that will take place on these channels.-->
-<!-- 1. Clearly define your plan's omissions.  
-
-A marketing plan explains what the marketing team is going to focus on. However, it also explains what the marketing team is not going to focus on.
-
-If there are other aspects of your business that you aren't serving in this particular plan, include them in this section. These omissions help to justify your mission, buyer personas, KPIs, and content. You can't please everyone in a single marketing campaign, and if your team isn't on the hook for something, you need to make it known. -->
-<!-- 1. Define your marketing budget.
-
-Your content strategy might leverage many free channels and platforms, but there are a number of hidden expenses to a marketing team that need to be accounted for.
-
-Whether it's freelance fees, sponsorships, or a new full-time marketing hire, use these costs to develop a marketing budget and outline each expense in this section of your marketing plan.
-
-1. Identify your competition.
-
-Part of marketing is knowing whom you're marketing against. Research the key players in your industry and consider profiling each one in this section.
-
-Keep in mind not every competitor will pose the same challenges to your business. For example, while one competitor might be ranking highly on search engines for keywords you want your website to rank for, another competitor might have a heavy footprint on a social network where you plan to launch an account.
-
-1. Outline your plan's contributors and their responsibilities.
-
-With your marketing plan fully fleshed out, it's time to explain who's doing what. You don't have to delve too deeply into your employees' day-to-day projects, but it should be known which teams and team leaders are in charge of specific content types, channels, KPIs, and more. -->
-<h4 id="example-marketing-plans">Example Marketing Plans</h4>
-<iframe width="560" height="315" src="./SampleMarketingPlan.pdf" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-<h3 id="pitch-deck">Pitch Deck</h3>
-<p>Pitch Decks are powerful tools to attract investment in your business and to share information about your business with potential customers. Here is a stellar pitch deck to learn from:</p>
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/4dpBt4w6J5whJZ" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="www.slideshare.net/PitchDeckCoach/airbnb-first-pitch-deck-editable" title="AirBnB Pitch Deck " target="_blank">AirBnB Pitch Deck </a> </strong> from <strong><a href="https://www.slideshare.net/PitchDeckCoach" target="_blank">Malcolm Lewis</a></strong></div>
-
-<br>
-Power Point Tutorial
-<br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lrFVjiIj-E0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<p>Work on a pitch deck for our business. </p>
-<p>Include the following:</p>
-<ul>
-<li>Name of your business</li>
-<li>A picture that represents you: <a href="https://unsplash.com/" target="_blank">Unsplash</a></li>
-<li>What is the problem you are solving?</li>
-<li>Why is the problem important?</li>
-<li>How are you going to solve the problem better than anyone else?</li>
+<h3 id="deployment">Deployment</h3>
+<p>Once your finished working on your website, push your changes to git using the following terminal commands:</p>
+<ol>
+<li>In your Command Line Interface, navigate to the project folder by typing &#x201C;cd summer-camp&#x201D;</li>
+<li>Then type the following git commands. Press enter after each line.<ul>
+<li>git add -A</li>
+<li>git commit -m &#x201C;your message explaining what you did&#x201D;
+  You may need to configure. Follow the instructions by typing each line with your information and pressing enter:<pre><code>  git config --global user.email &#x201C;johndoe@example.com&#x201D;
+  git config --global user.name &quot;John Doe&quot;
+</code></pre></li>
+<li>git push origin master
+  You may need to login to github via the terminal. Type in your username and password as usual even if it doesn&#x2019;t show up in the terminal. </li>
 </ul>
-<p><em>Once finished, work on your website.</em></p>
-<h3 id="closing">Closing</h3>
-<p>Reflect on your pitch deck and your marketing plan. How are you going to attract both investors and customers? Practice talking about how your business is important.</p>
-<p>&#xA9; 2017 Austin Coding Academy</p>
+</li>
+<li>Go to github.com and check that your code is there. </li>
+<li>To deploy your code, navigate to &#x201C;settings&#x201D;</li>
+<li>Scroll down to Github Pages and change the source to &#x201C;Master Branch&#x201D;</li>
+<li>Navigate to the link provided to see your hosted web page. </li>
+</ol>
+<h2 id="congratulations-youve-built-and-deployed-your-first-website">Congratulations! You&#x2019;ve built and deployed your first website!</h2>
+<p>&#xA9; 2019 Lubbock Coding Academy</p>
 
                                 
                                 </section>
@@ -390,12 +453,12 @@ Power Point Tutorial
 
             
                 
-                <a href="day3.html" class="navigation navigation-prev " aria-label="Previous page: Day 3">
+                <a href="day3.html" class="navigation navigation-prev " aria-label="Previous page: Day 3 - Coding">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="day5.html" class="navigation navigation-next " aria-label="Next page: Day 5">
+                <a href="day5.html" class="navigation navigation-next " aria-label="Next page: Day 5 - Presentations">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -406,7 +469,7 @@ Power Point Tutorial
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Day 4","level":"1.5","depth":1,"next":{"title":"Day 5","level":"1.6","depth":1,"path":"day5.md","ref":"day5.md","articles":[]},"previous":{"title":"Day 3","level":"1.4","depth":1,"path":"day3.md","ref":"day3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["edit-link","ga","collapsible-chapters","replace-with-index-html","wide-page","hidden","-sharing"],"pluginsConfig":{"search":{},"collapsible-chapters":{},"wide-page":{},"hidden":{"usernames":["aca-staff"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"replace-with-index-html":{},"ga":{"configuration":{"name":"Summer Camp"},"token":"UA-68821515-2"},"edit-link":{"label":"Edit This Page","base":"https://github.com/AustinCodingAcademy/summer-gitbook/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"day4.md","mtime":"2019-06-13T17:14:57.623Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-13T17:15:26.067Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Day 4 - Coding","level":"1.5","depth":1,"next":{"title":"Day 5 - Presentations","level":"1.6","depth":1,"path":"day5.md","ref":"day5.md","articles":[]},"previous":{"title":"Day 3 - Coding","level":"1.4","depth":1,"path":"day3.md","ref":"day3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["edit-link","ga","collapsible-chapters","replace-with-index-html","wide-page","hidden","-sharing"],"pluginsConfig":{"search":{},"collapsible-chapters":{},"wide-page":{},"hidden":{"usernames":["aca-staff"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"replace-with-index-html":{},"ga":{"configuration":{"name":"Summer Camp"},"token":"UA-68821515-2"},"edit-link":{"label":"Edit This Page","base":"https://github.com/AustinCodingAcademy/summer-gitbook/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"day4.md","mtime":"2019-06-28T22:16:54.753Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-28T22:17:34.116Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
