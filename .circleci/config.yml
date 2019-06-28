@@ -1,6 +1,8 @@
 version: 2
 jobs:
   build:
+    branches:
+        ignore: gh-pages
     docker:
       - image: circleci/node:8.9.4
     working_directory: ~/repo
@@ -11,12 +13,18 @@ jobs:
             - yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
             - yarn-packages-v1-{{ .Branch }}-
             - yarn-packages-v1-
-            
+
       - run: yarn
-      
+
       - save_cache:
           paths:
             - ~/.cache/yarn
           key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
-
-      - run: npm run heroku-postbuild
+      - deploy:
+          name: Deploy Website
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              git config --global user.email "kevin@austincodingacademy.com"
+              git config --global user.name "Kevin Colten"
+              npx gh-pages --dotfiles --dist _book/
+            fi
