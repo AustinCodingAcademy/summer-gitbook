@@ -32,7 +32,7 @@
       key = "dallas";
       break;
     default:
-      img = "https://lh3.google.com/u/2/d/18-EOFosfqu1KY7FVXuUUsyTDSU-xuGYZ=w2880-h1642-iv1 <br>";
+      img = "./LCA_Logo_2x2.png";
       city = "Lubbock";
       key = "austin";
       break;
